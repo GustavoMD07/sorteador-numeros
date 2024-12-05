@@ -7,7 +7,13 @@ function sortear () {
     let numero;
 
     if (de >= ate) {
-        alert("Opa! Não é recomendado que o campo 'do número' seja maior do que o 'até o número'! Revise com cuidado ")
+        alert("Opa! Não é recomendado que o campo 'Do número' seja maior do que o 'Até o número'!");
+        return;
+    }
+
+    if (quantidade > (ate - de + 1)) {
+        alert("Calma! O campo 'Quantidade' tem que ser menor ou igual ao intervalo no campo 'Do número' ao campo 'Até o número'");
+        return;
     }
 
     for (let i = 0; i < quantidade; i++) {
@@ -15,6 +21,7 @@ function sortear () {
 
         while (sorteados.includes(numero)) {
             numero = obterNumeroAleatorio(de, ate);
+            alert("Tentando obter número inédito");
         }
 
         sorteados.push(numero);
