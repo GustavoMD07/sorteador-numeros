@@ -7,7 +7,7 @@ function sortear () {
     let numero;
 
     if (de >= ate) {
-        alert("Opa! Não é recomendado que o campo 'do número' seja maior do que o 'até o número'! ")
+        alert("Opa! Não é recomendado que o campo 'do número' seja maior do que o 'até o número'! Revise com cuidado ")
     }
 
     for (let i = 0; i < quantidade; i++) {
