@@ -21,7 +21,6 @@ function sortear () {
 
         while (sorteados.includes(numero)) {
             numero = obterNumeroAleatorio(de, ate);
-            
         }
 
         sorteados.push(numero);
@@ -29,6 +28,7 @@ function sortear () {
 
     let resultado = document.getElementById("resultado");
     resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados} </label>`;
+    console.log(sorteados);
     alterarStatusBotao();
     
 }
